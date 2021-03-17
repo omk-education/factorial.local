@@ -16,7 +16,7 @@ composer create-project --prefer-dist laravel/laravel factorial.local
 php artisan make:controller CalculateController
 ```
 
--   [ ] 1.4. Создание метода для загрузки формы
+-   [x] 1.4. Создание метода для загрузки формы
 -   [ ] 1.5. Создание базового представления приложения
     -   [ ] 1.5.1. Вывод результата
     -   [ ] 1.5.2. Форма для передачи данных
