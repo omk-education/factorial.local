@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Маршрут для загрузки формы
+Route::get(
+    '/',
+    [CalculateController::class, 'index']
+)->name('index');
