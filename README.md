@@ -10,7 +10,7 @@ composer create-project --prefer-dist laravel/laravel factorial.local
 
 -   [x] 1.1. Проектирование маршрутов приложения
 -   [x] 1.2. Создание маршрута для загрузки формы
--   [ ] 1.3. Создание контроллера
+-   [x] 1.3. Создание контроллера
 
 ```php
 php artisan make:controller CalculateController
