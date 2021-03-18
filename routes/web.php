@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CalculateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Маршрут для загрузки формы
+Route::get(
+    '/',
+    [CalculateController::class, 'index']
+)->name('index');
+
+// Маршрут для вычисления факториала числа
+Route::post(
+    '/',
+    [CalculateController::class, 'factorial']
+)->name('factorial');
