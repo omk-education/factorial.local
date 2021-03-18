@@ -28,7 +28,7 @@ php artisan make:controller CalculateController
 
 ### 2. Рефакторинг прототипа
 
--   [ ] 2.1. Перенос валидации данных в Form Request
+-   [x] 2.1. Перенос валидации данных в Form Request
 
 ```php
 php artisan make:request FactorialRequest
