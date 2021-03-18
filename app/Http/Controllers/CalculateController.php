@@ -30,9 +30,6 @@ class CalculateController extends Controller
 
         // вычисление факториала
         $factorial = 1;
-        for ($i = 1; $i <= $number; $i++) {
-            $factorial *= $i;
-        }
 
         // передача данных представлению
         return view('index', [
