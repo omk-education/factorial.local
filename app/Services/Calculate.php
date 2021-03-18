@@ -14,7 +14,7 @@ class Calculate
      *
      * @return integer факториал числа
      */
-    public function factorial(int $number) : int
+    public function factorial(int $number)
     {
         $factorial = 1;
         for ($i = 1; $i <= $number; $i++) {
