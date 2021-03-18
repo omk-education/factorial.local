@@ -15,7 +15,7 @@ class CalculateController extends Controller
     {
         return view('index');
     }
-    
+
     /**
      * Вычисление факториала
      *
@@ -30,7 +30,7 @@ class CalculateController extends Controller
 
         // валидация
         $validated = $request->validate([
-            'number' => 'required|integer|min:0',
+            'number' => 'required|numeric|integer|min:0',
         ]);
 
         // вычисление факториала
