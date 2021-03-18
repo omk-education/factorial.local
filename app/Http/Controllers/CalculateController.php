@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Calculate;
 use App\Http\Requests\FactorialRequest;
 
 class CalculateController extends Controller
@@ -29,7 +30,7 @@ class CalculateController extends Controller
         $number = $request->number;
 
         // вычисление факториала
-        $factorial = 1;
+        $factorial = Calculate::factorial($number);
 
         // передача данных представлению
         return view('index', [
