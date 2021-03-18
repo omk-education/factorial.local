@@ -34,7 +34,7 @@ php artisan make:controller CalculateController
 php artisan make:request FactorialRequest
 ```
 
--   [ ] 2.2. Подключение валидации к контроллеру
+-   [x] 2.2. Подключение валидации к контроллеру
 -   [ ] 2.3. Создание сервиса для вычисления факториала
 -   [ ] 2.4. Создание сервис провайдера
 

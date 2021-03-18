@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\FactorialRequest;
 
 class CalculateController extends Controller
 {
@@ -19,19 +19,14 @@ class CalculateController extends Controller
     /**
      * Вычисление факториала
      *
-     * @param Request $request получение данных из формы
+     * @param FactorialRequest $request получение данных из формы
      *
      * @return View представление
      */
-    public function factorial(Request $request)
+    public function factorial(FactorialRequest $request)
     {
         // получение данных
         $number = $request->number;
-
-        // валидация
-        $validated = $request->validate([
-            'number' => 'required|numeric|integer|min:0',
-        ]);
 
         // вычисление факториала
         $factorial = 1;
