@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Calculate;
 use App\Http\Requests\FactorialRequest;
 
+/**
+ * Контроллер для вычисления
+ */
 class CalculateController extends Controller
 {
     /**
